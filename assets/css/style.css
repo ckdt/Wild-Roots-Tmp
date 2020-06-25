@@ -369,12 +369,9 @@ body {
 .content {
   display: block;
   padding: 1rem;
-  background: red;
 }
 
 .item {
-  background-color: #060403;
-  color: #fff;
   font-size: 40px;
   font-family: sans-serif;
   padding: 20px;
@@ -383,6 +380,10 @@ body {
   justify-content: center;
   margin-bottom: 1rem;
   min-height: 335px;
+}
+
+.item img {
+  width: 100%;
 }
 
 .footer {
@@ -398,7 +399,6 @@ body {
   display: flex;
   align-items: space-around;
   justify-content: center;
-  background: blue;
 }
 
 .social--link {
