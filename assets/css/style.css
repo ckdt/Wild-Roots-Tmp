@@ -199,25 +199,54 @@ template {
   font-display: swap;
 }
 
+.svg-icon {
+  width: 2em;
+  height: 2em;
+  background: #060403;
+  padding: .25rem;
+  border-radius: .25rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #fff;
+}
+
+.svg-icon circle {
+  stroke: #fff;
+  stroke-width: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* START STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body,
 .root {
   width: 100%;
-  margin: 0;
 }
 
 body {
-  background: #ffe5e6;
+  background: #FCF6F5;
   font-family: 'Alte Haas Grotesk', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
     Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-size: 16px;
+  color: #060403;
 }
 
 .header {
-  background-color: rebeccapurple;
   width: 100%;
-  height: 50vh;
+  /* height: 50vh; */
   overflow: hidden;
   margin: 0;
 
@@ -229,6 +258,7 @@ body {
 .animated--logo {
   width: 300px;
   height: 300px;
+  transform: scale(0.75);
 }
 
 .header--wordmark {
@@ -336,19 +366,68 @@ body {
   }
 }
 
+.content {
+  display: block;
+  padding: 1rem;
+  background: red;
+}
+
+.item {
+  background-color: #060403;
+  color: #fff;
+  font-size: 40px;
+  font-family: sans-serif;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  min-height: 335px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  font-size: .80rem;
+  padding: 1rem 3rem;
+}
+
+.social {
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
+  background: blue;
+}
+
+.social--link {
+  padding: .5rem;
+}
+
+
+
+
+/* 
+.content {
+  display: block;
+}
+
+.section {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.section--image {
+  width: 100%;
+}
+
 .manifesto {
-  background: #ffe5e6;
   width: 100%;
   overflow: hidden;
   margin: 0;
-  color: red;
 }
 
-.column {
-  max-width: 800px;
-  margin: 4em auto;
-  padding: 1.5em;
-}
+.column {}
 
 .header--title {
   font-size: 1.5rem;
@@ -365,13 +444,29 @@ body {
 }
 
 .body--copy {
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: -0.025em;
   font-weight: bold;
-}
+} */
 
 @media only screen and (min-width: 600px) {
-  .header--title {
+
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+
+  .item {
+    margin-bottom: 0;
+  }
+
+
+
+  /* .header--title {
     font-size: 2rem;
   }
 
@@ -380,6 +475,17 @@ body {
   }
 
   .body--copy {
-    font-size: 2rem;
+    font-size: 1rem;
   }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section {
+    background: red;
+  } */
+
+
 }
