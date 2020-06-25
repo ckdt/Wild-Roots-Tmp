@@ -372,7 +372,6 @@ body {
 }
 
 .item {
-  font-size: 40px;
   font-family: sans-serif;
   padding: 20px;
   display: flex;
@@ -380,6 +379,13 @@ body {
   justify-content: center;
   margin-bottom: 1rem;
   min-height: 335px;
+}
+
+.item--content p {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 
 .item img {
